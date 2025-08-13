@@ -11,14 +11,14 @@
   <header>🍹 술 계산기</header>
 
   <div class="menu">
-    <button onclick="showCalculator('alc-percent')">도수 계산</button>
+    <button onclick="showCalculator('alc-percent')">칵테일 도수 계산</button>
     <button onclick="showCalculator('bac')">혈중 알코올 농도</button>
-    <button onclick="showCalculator('price')">술값 계산</button>
+    <button onclick="showCalculator('price')">칵테일 가격 계산</button>
   </div>
 
   <!-- 도수 계산 -->
   <div id="alc-percent" class="calculator">
-    <h2>도수 계산</h2>
+    <h2>칵테일 도수 계산</h2>
     <div id="alc-list"></div>
     <button class="action-btn" onclick="addAlcoholInput('alc-list')">술 추가</button>
     <button class="action-btn" onclick="calcAlcoholPercent()">계산</button>
@@ -45,7 +45,7 @@
 
   <!-- 가격 계산 -->
   <div id="price" class="calculator">
-    <h2>술값 계산</h2>
+    <h2>칵테일 가격 계산</h2>
     <div id="price-list"></div>
     <button class="action-btn" onclick="addPriceInput()">술 추가</button>
     <button class="action-btn" onclick="calcPrice()">계산</button>

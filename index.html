@@ -8,48 +8,50 @@
 </head>
 <body>
 
-  <header>🍹 술 계산기</header>
+  <div class="wrapper">
+    <header>🍹 술 계산기</header>
 
-  <div class="menu">
-    <button onclick="showCalculator('alc-percent')">칵테일 도수 계산</button>
-    <button onclick="showCalculator('bac')">혈중 알코올 농도</button>
-    <button onclick="showCalculator('price')">칵테일 가격 계산</button>
-  </div>
+    <div class="menu">
+      <button onclick="showCalculator('alc-percent')">칵테일 도수 계산</button>
+      <button onclick="showCalculator('bac')">혈중 알코올 농도</button>
+      <button onclick="showCalculator('price')">칵테일 가격 계산</button>
+    </div>
 
-  <!-- 도수 계산 -->
-  <div id="alc-percent" class="calculator">
-    <h2>칵테일 도수 계산</h2>
-    <div id="alc-list"></div>
-    <button class="action-btn" onclick="addAlcoholInput('alc-list')">술 추가</button>
-    <button class="action-btn" onclick="calcAlcoholPercent()">계산</button>
-    <div id="result1" class="result"></div>
-  </div>
+    <!-- 도수 계산 -->
+    <div id="alc-percent" class="calculator">
+      <h2>칵테일 도수 계산</h2>
+      <div id="alc-list"></div>
+      <button class="action-btn" onclick="addAlcoholInput('alc-list')">술 추가</button>
+      <button class="action-btn" onclick="calcAlcoholPercent()">계산</button>
+      <div id="result1" class="result"></div>
+    </div>
 
-  <!-- BAC 계산 -->
-  <div id="bac" class="calculator">
-    <h2>혈중 알코올 농도</h2>
-    <label>몸무게(kg)</label>
-    <input type="number" id="weight">
+    <!-- BAC 계산 -->
+    <div id="bac" class="calculator">
+      <h2>혈중 알코올 농도</h2>
+      <label>몸무게(kg)</label>
+      <input type="number" id="weight">
 
-    <label>성별 (남=1, 여=2)</label>
-    <input type="number" id="sex" min="1" max="2">
+      <label>성별 (남=1, 여=2)</label>
+      <input type="number" id="sex" min="1" max="2">
 
-    <label>마신 후 경과 시간(시간)</label>
-    <input type="number" id="hour" step="0.1">
+      <label>마신 후 경과 시간(시간)</label>
+      <input type="number" id="hour" step="0.1">
 
-    <div id="bac-list"></div>
-    <button class="action-btn" onclick="addAlcoholInput('bac-list')">술 추가</button>
-    <button class="action-btn" onclick="calcBAC()">계산</button>
-    <div id="result2" class="result"></div>
-  </div>
+      <div id="bac-list"></div>
+      <button class="action-btn" onclick="addAlcoholInput('bac-list')">술 추가</button>
+      <button class="action-btn" onclick="calcBAC()">계산</button>
+      <div id="result2" class="result"></div>
+    </div>
 
-  <!-- 가격 계산 -->
-  <div id="price" class="calculator">
-    <h2>칵테일 가격 계산</h2>
-    <div id="price-list"></div>
-    <button class="action-btn" onclick="addPriceInput()">술 추가</button>
-    <button class="action-btn" onclick="calcPrice()">계산</button>
-    <div id="result3" class="result"></div>
+    <!-- 가격 계산 -->
+    <div id="price" class="calculator">
+      <h2>칵테일 가격 계산</h2>
+      <div id="price-list"></div>
+      <button class="action-btn" onclick="addPriceInput()">술 추가</button>
+      <button class="action-btn" onclick="calcPrice()">계산</button>
+      <div id="result3" class="result"></div>
+    </div>
   </div>
 
   <script src="script.js"></script>

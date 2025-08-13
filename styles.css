@@ -1,14 +1,17 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
+  min-height: 100vh;
   background: #fdf6f0;
   color: #444;
-  transition: background 0.5s ease;
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: center; 
+  align-items: center;     
   min-height: 100vh;
 }
 
@@ -21,6 +24,7 @@ header {
   font-weight: bold;
   letter-spacing: 1px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  width: 100%;
 }
 
 .menu {
@@ -60,65 +64,11 @@ header {
   justify-content: center;
 }
 
-.show-slide {
-  animation: slideIn 0.4s ease forwards;
-}
+label { display: block; margin-top: 14px; font-weight: 500; color: #555; }
+input { width: 100%; padding: 9px; border-radius: 10px; border: 1px solid #ddd; margin-top: 5px; transition: border 0.2s ease, box-shadow 0.2s ease; }
+input:focus { border-color: #a0d8ef; box-shadow: 0 0 8px rgba(160, 216, 239, 0.4); outline: none; }
+.action-btn { margin-top: 16px; padding: 11px 18px; background: #caffbf; color: #333; border: none; border-radius: 20px; cursor: pointer; font-size: 1rem; font-weight: 500; transition: all 0.25s ease; }
+.action-btn:hover { background: #b3f8a8; transform: translateY(-2px); }
+.result { margin-top: 18px; background: #fffacd; padding: 12px; border-radius: 14px; font-weight: bold; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
 
-label {
-  display: block;
-  margin-top: 14px;
-  font-weight: 500;
-  color: #555;
-}
-
-input {
-  width: 100%;
-  padding: 9px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  margin-top: 5px;
-  transition: border 0.2s ease, box-shadow 0.2s ease;
-}
-input:focus {
-  border-color: #a0d8ef;
-  box-shadow: 0 0 8px rgba(160, 216, 239, 0.4);
-  outline: none;
-}
-
-.action-btn {
-  margin-top: 16px;
-  padding: 11px 18px;
-  background: #caffbf;
-  color: #333;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 500;
-  transition: all 0.25s ease;
-}
-.action-btn:hover {
-  background: #b3f8a8;
-  transform: translateY(-2px);
-}
-
-.result {
-  margin-top: 18px;
-  background: #fffacd;
-  padding: 12px;
-  border-radius: 14px;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+@keyframes slideIn { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: translateX(0); } }

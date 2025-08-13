@@ -7,7 +7,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+  text-align: center;
   min-height: 100vh;
 }
 
@@ -48,6 +49,8 @@ header {
 
 .calculator {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background: white;
   max-width: 500px;
   margin: 20px auto;

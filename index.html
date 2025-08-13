@@ -18,8 +18,7 @@
 
   <!-- 도수 계산 -->
   <div id="alc-percent" class="calculator">
-    <label>술 종류 개수</label>
-    <input type="number" id="n1" min="1">
+    <h2>도수 계산</h2>
     <div id="alc-list"></div>
     <button class="action-btn" onclick="addAlcoholInput('alc-list')">술 추가</button>
     <button class="action-btn" onclick="calcAlcoholPercent()">계산</button>
@@ -28,13 +27,13 @@
 
   <!-- BAC 계산 -->
   <div id="bac" class="calculator">
+    <h2>혈중 알코올 농도</h2>
     <label>몸무게(kg)</label>
     <input type="number" id="weight">
 
-    <label>술 종류 개수</label>
-    <input type="number" id="n2" min="1">
     <label>성별 (남=1, 여=2)</label>
     <input type="number" id="sex" min="1" max="2">
+
     <label>마신 후 경과 시간(시간)</label>
     <input type="number" id="hour" step="0.1">
 
@@ -46,8 +45,7 @@
 
   <!-- 가격 계산 -->
   <div id="price" class="calculator">
-    <label>술 종류 개수</label>
-    <input type="number" id="n3" min="1">
+    <h2>술값 계산</h2>
     <div id="price-list"></div>
     <button class="action-btn" onclick="addPriceInput()">술 추가</button>
     <button class="action-btn" onclick="calcPrice()">계산</button>

@@ -4,6 +4,11 @@ body {
   background: #fdf6f0;
   color: #444;
   transition: background 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
 }
 
 header {
@@ -23,7 +28,6 @@ header {
   gap: 12px;
   flex-wrap: wrap;
   padding: 15px;
-  justify-content: center;
 }
 
 .menu button {

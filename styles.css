@@ -4,6 +4,11 @@ body {
   background: #fdf6f0;
   color: #444;
   transition: background 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
 }
 
 header {
@@ -42,13 +47,14 @@ header {
 }
 
 .calculator {
-  display: none;
+  display: flex;
   background: white;
   max-width: 500px;
   margin: 20px auto;
   padding: 22px;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  justify-content: center;
 }
 
 .show-slide {

@@ -23,6 +23,7 @@ header {
   gap: 12px;
   flex-wrap: wrap;
   padding: 15px;
+  justify-content: center;
 }
 
 .menu button {
@@ -42,13 +43,14 @@ header {
 }
 
 .calculator {
-  display: none;
+  display: flex;
   background: white;
   max-width: 500px;
   margin: 20px auto;
   padding: 22px;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  justify-content: center;
 }
 
 .show-slide {
